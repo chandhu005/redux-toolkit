@@ -5,6 +5,7 @@ import store from './app/store'
 import { Container, Typography } from '@mui/material';
 import AddHabitForm from './components/AddHabitForm';
 import HabbitList from './components/HabbitList';
+import HabitStatics from './components/HabitStatics';
 
 function App() {
  
@@ -17,6 +18,7 @@ function App() {
         </Typography>
         <AddHabitForm/>
         <HabbitList/>
+        <HabitStatics/>
 
       
       </Container>

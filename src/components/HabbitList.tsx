@@ -4,7 +4,7 @@ import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import CheckCircle from "@mui/icons-material/CheckCircle";
 import DeleteIcon from "@mui/icons-material/Delete";
-import { deletehabit, Habit, toggleHabit } from "../app/habit-slice";
+import { deleteHabit, Habit, toggleHabit } from "../app/habit-slice";
 
 const HabbitList: React.FC = () => {
   const { habits } = useSelector((state: RootState) => state.habits);
@@ -51,7 +51,7 @@ const HabbitList: React.FC = () => {
                   variant="outlined"
                   color="error"
                   startIcon={<DeleteIcon />}
-                  onClick={() => dispatch(deletehabit({ id: habit.id }))}  
+                  onClick={() => dispatch(deleteHabit({ id: habit.id }))}  
                 >
                   Remove
                 </Button>
